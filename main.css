@@ -1,0 +1,160 @@
+:root{
+    --bckg:#0400ff;
+}
+
+/* *{
+    color:white
+} */
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:20px;
+}
+
+.nav-bar{
+    padding: 0;
+    margin-left:0;
+    background-color:var(--bckg);
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 2%;
+    align-items: center;
+}
+
+
+
+.box {
+    overflow: hidden;
+    z-index: -124;
+    min-height: 600px;
+    min-width: 100%;
+    background-color:var(--bckg);
+    /* border: 1px solid black; */
+    position: relative;
+    margin-top:-3%;
+    margin-bottom: 10%;
+}
+
+
+.box:after {
+    z-index: -123;
+    content: ''; 
+    height: 1000px;
+    width: 111.421%;
+    background-color: white;
+    position: absolute;
+    left: -1px;
+    top: 786px; 
+    transform: rotate(-7deg);
+    transform-origin: 1px 1px;
+}
+
+
+.main-text{
+    margin-top: 3%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:12px;
+}
+
+.images{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+.card-container{
+    border-radius: 12px;
+    background-color: var(--bckg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: max-content;
+    max-width: 70%;
+}
+
+.cards{
+    margin-top:3%;
+    display: grid;
+    grid-template-columns: repeat(4,18%);
+    justify-content: center;
+    height: 100%;
+    gap:40px;
+    margin-bottom: 4%;
+}
+
+.info-card{
+    align-items: center;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: max-content
+}
+
+.review-text{
+    grid-area:header
+}
+
+.review-card1{
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
+    white-space: initial;
+    grid-area: left;
+}
+.review-card2{
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
+    white-space: initial;
+    grid-area: center;
+}
+
+.review-card3{
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
+    white-space: initial;
+    grid-area: right;
+}
+
+
+.reviews{
+    margin-top: 4%;
+    max-width: 60%;
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'left left center center right right'
+        'left left center center right right';
+    gap: 40px;
+    background-color: white;
+    padding: 10px;
+}
+
+.icons {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.plans{
+    
+}
